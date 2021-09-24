@@ -1,0 +1,16 @@
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &__item {
+    font: $font-filters;
+    text-transform: uppercase;
+
+    &:not(last-child){
+      margin-right: 24px;
+    }
+
+  }
+
+}

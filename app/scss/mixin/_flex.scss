@@ -1,0 +1,10 @@
+@mixin fb-sb-c {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+@mixin fb-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

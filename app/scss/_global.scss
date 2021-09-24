@@ -1,0 +1,47 @@
+body {
+  font: $font-body;
+  letter-spacing: 0.03em;
+  background-color: $white;
+  color: $dark-500;
+}
+
+section {
+  margin-bottom: 72px;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn-white {
+  border: 1px solid $green-900;
+  padding: 16px 18px;
+  font: 600 14px/1.4 'Open Sans',sans-serif;
+  @include fb-sb-c;
+  border-radius: 6px;
+  border-color: $white;
+  max-width: 240px;
+  width: 100%;
+  color: $green-900;
+}
+
+.click {
+  display: inline-block;
+  padding: 12px 14px;
+  background-color: $green-900;
+  border-radius: 6px;
+  color: $white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font: $font-title;
+  color: $dark-900;
+  margin-bottom: 30px;
+}
