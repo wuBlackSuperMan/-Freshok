@@ -48,14 +48,25 @@
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 6px;
   border: transparent;
-  img{
+
+  img {
     display: inline-block;
+
+    &:active {
+      fill: $green-900;
+    }
   }
+
+  &:hover {
+    background-color: $green-200;
+  }
+
 }
 
 .slick__btn.slick-prev.slick-arrow {
   left: 60px;
 }
-.slick__btn.slick-next.slick-arrow{
+
+.slick__btn.slick-next.slick-arrow {
   right: 60px;
 }

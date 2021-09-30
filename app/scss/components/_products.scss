@@ -7,10 +7,149 @@
     font: $font-filters;
     text-transform: uppercase;
 
-    &:not(last-child){
+    &:not(last-child) {
       margin-right: 24px;
     }
-
+  }
+  &__link {
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid transparent;
   }
 
+  &__link.mixitup-control-active {
+    border-bottom: 3px solid $green-200;
+  }
+
+}
+
+.products {
+  margin: 70px 0;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+}
+
+.product {
+  max-width: 300px;
+  width: 100%;
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  margin:0  30px 30px 0;
+
+
+  &__img {
+    width: 300px;
+    height: 225px;
+  }
+
+  &:hover {
+    border: 1px solid $green-900;
+  }
+
+  &__labels {
+    max-width: 100px;
+    width: 100%;
+  }
+
+  &__label {
+    display: inline-block;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 9px;
+    margin-bottom: 9px;
+    padding: 3px 6px;
+
+    &--new {
+      background-color: $green-900;
+    }
+
+    &--discound {
+      background-color: $red-900;
+    }
+
+    &--hit {
+      background-color: #FF7A00;
+    }
+  }
+
+  &__btn {
+    border: transparent;
+    background-color: transparent;
+    border-radius: 3px;
+    width: 32px;
+    height: 32px;
+
+    svg {
+      fill: $silver-600;
+      &:hover {
+        fill: $yellow-900;
+      }
+    }
+
+    &--cart {
+      background-color: $green-900;
+      @include fb-c-c;
+
+      svg {
+        fill: $white;
+      }
+    }
+  }
+
+  h3 {
+    padding: 18px 18px 0;
+    font-weight: 600;
+  }
+
+  &__favorite {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 12px 0;
+  }
+
+  &__additional {
+    display: flex;
+    padding: 50px 18px 18px;
+    justify-content: space-between;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &>span {
+      display: block;
+    }
+  }
+
+  &__fullprice {
+    position: relative;
+    color: $silver-600;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $silver-600;
+      transform: rotate(-14.14deg);
+      bottom: 8px;
+    }
+  }
+}
+.btn-white--goods {
+  max-width: 177px;
+  width: 100%;
+  justify-content: center;
+  background-color: $white;
+  border: 1px solid $green-900;
+  margin: 0 auto;
 }
